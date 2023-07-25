@@ -1,7 +1,7 @@
-const express = require('express');
+const express = require("express");
+const cityRouter = require("./city.router");
 const router = express.Router();
 
-// colocar las rutas aquí
-
+router.use("/cities", cityRouter);
 
 module.exports = router;
